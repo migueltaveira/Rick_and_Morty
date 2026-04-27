@@ -169,7 +169,7 @@ A aplicação foi organizada em camadas para facilitar a manutenção, a separa�
 ![Busca de personagens](screenshots/search.png)
 
 ### Tela de detalhes do personagem
-![Tela de detalhes](screenshots/details.png)
+![Tela de detalhes](screenshots/detalhes.png)
 
 ### Tela de favoritos
 ![Tela de favoritos](screenshots/favoritos.png)
