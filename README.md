@@ -201,14 +201,3 @@ Todo o código-fonte em **Dart** está versionado corretamente neste repositóri
 Desenvolvido por **Miguel Taveira** para atividade acadêmica da disciplina, com foco em Flutter, consumo de API e integração com Firebase.
 
 ---
-
-## ✅ Requisitos atendidos
-
-- [x] Aplicação exibindo dados de API
-- [x] Integração com Firebase
-- [x] README com orientações de utilização
-- [x] Código-fonte Dart versionado
-- [x] Desenho da arquitetura da aplicação
-- [x] Prints da aplicação
-- [x] Link para baixar o APK
-- [x] Link para testar a versão web
