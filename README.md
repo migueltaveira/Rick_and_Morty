@@ -67,7 +67,7 @@ O Firebase foi utilizado para armazenar e recuperar os personagens favoritos do 
 
 ### 1. Clone o repositório
 
-`git clone LINK_DO_SEU_REPOSITORIO`
+`https://github.com/migueltaveira/Rick_e_Morty`
 
 ### 2. Acesse a pasta do projeto
 
