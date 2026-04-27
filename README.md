@@ -67,102 +67,148 @@ O Firebase foi utilizado para armazenar e recuperar os personagens favoritos do 
 
 ### 1. Clone o repositório
 
-```bash
-git clone LINK_DO_SEU_REPOSITORIO
-2. Acesse a pasta do projeto
-cd rick_e_morty
-3. Instale as dependências
-flutter pub get
-4. Execute o aplicativo
-flutter run
+`git clone LINK_DO_SEU_REPOSITORIO`
 
-Observação: o projeto foi desenvolvido originalmente no FlutLab, mas também pode ser aberto e executado localmente em ambientes Flutter configurados, como VS Code ou Android Studio.
+### 2. Acesse a pasta do projeto
 
-🌍 Acesso rápido ao projeto
-Versão Web (FlutLab)
-https://flutlab.io/editor/9daf5d94-f6b3-4ee4-874a-961c31f5a43a
-Download do APK
-https://flutlab.io/apk/aHR0cHM6Ly9hcGkuZmx1dGxhYi5pby9wcm9qZWN0cy8zMzQ2MzQ4L2Rvd25sb2FkLWFwcD9rZXk9dXR5cDRmdHI3ZncyeTl2NWF3aWEmdGFyZ2V0PWFuZHJvaWQtYXJtNjQ=
-🏗 Arquitetura da aplicação
+`cd rick_e_morty`
+
+### 3. Instale as dependências
+
+`flutter pub get`
+
+### 4. Execute o aplicativo
+
+`flutter run`
+
+> **Observação:** o projeto foi desenvolvido originalmente no **FlutLab**, mas também pode ser aberto e executado localmente em ambientes Flutter configurados, como **VS Code** ou **Android Studio**.
+
+---
+
+## 🌍 Acesso rápido ao projeto
+
+### Versão Web (FlutLab)
+- https://flutlab.io/editor/9daf5d94-f6b3-4ee4-874a-961c31f5a43a
+
+### Download do APK
+- https://flutlab.io/apk/aHR0cHM6Ly9hcGkuZmx1dGxhYi5pby9wcm9qZWN0cy8zMzQ2MzQ4L2Rvd25sb2FkLWFwcD9rZXk9dXR5cDRmdHI3ZncyeTl2NWF3aWEmdGFyZ2V0PWFuZHJvaWQtYXJtNjQ=
+
+---
+
+## 🏗 Arquitetura da aplicação
 
 A aplicação foi organizada em camadas para facilitar a manutenção, a separação de responsabilidades e a escalabilidade do projeto.
 
-rick_e_morty/
-│
-├── android/
-├── ios/
-├── web/
-│
-├── lib/
-│   ├── models/
-│   │   └── character.dart
-│   │
-│   ├── screens/
-│   │   ├── detail_screen.dart
-│   │   ├── favorites_screen.dart
-│   │   └── home_screen.dart
-│   │
-│   ├── services/
-│   │   ├── api_service.dart
-│   │   ├── favorites_service.dart
-│   │   └── firebase_options.dart
-│   │
-│   └── main.dart
-│
-├── screenshots/
-│   ├── detalhes.png
-│   ├── favoritos.png
-│   ├── home.png
-│   ├── qr_download_apk.png
-│   └── search.png
-│
-├── pubspec.yaml
-└── README.md
-🔄 Fluxo da aplicação
-Usuário
-   ↓
-Telas da aplicação (screens)
-   ↓
-Serviços da aplicação (services)
-   ↓
-Rick and Morty API → busca e exibição de personagens
+    rick_e_morty/
+    │
+    ├── android/
+    ├── ios/
+    ├── web/
+    │
+    ├── lib/
+    │   ├── models/
+    │   │   └── character.dart
+    │   │
+    │   ├── screens/
+    │   │   ├── detail_screen.dart
+    │   │   ├── favorites_screen.dart
+    │   │   └── home_screen.dart
+    │   │
+    │   ├── services/
+    │   │   ├── api_service.dart
+    │   │   ├── favorites_service.dart
+    │   │   └── firebase_options.dart
+    │   │
+    │   └── main.dart
+    │
+    ├── screenshots/
+    │   ├── details.png
+    │   ├── favoritos.png
+    │   ├── home.png
+    │   ├── qr_download_apk.png
+    │   └── search.png
+    │
+    ├── pubspec.yaml
+    └── README.md
 
-Favoritos
-   ↓
-Firebase / persistência de dados
-   ↓
-Salvar e recuperar personagens favoritos
-📌 Organização das camadas
-main.dart → ponto de entrada da aplicação
-models/character.dart → modelo de dados dos personagens
-screens/home_screen.dart → tela principal com listagem e busca de personagens
-screens/detail_screen.dart → tela de detalhes do personagem
-screens/favorites_screen.dart → tela de favoritos
-services/api_service.dart → responsável pelo consumo da API Rick and Morty
-services/favorites_service.dart → responsável pela lógica de favoritos
-services/firebase_options.dart → configuração do Firebase no projeto
-📸 Prints da aplicação
-Tela inicial
+### 🔄 Fluxo da aplicação
 
-Funcionalidade de busca de personagens
+    Usuário
+       ↓
+    Telas da aplicação (screens)
+       ↓
+    Serviços da aplicação (services)
+       ↓
+    Rick and Morty API → busca e exibição de personagens
 
-Tela de detalhes do personagem
+    Favoritos
+       ↓
+    Firebase / persistência de dados
+       ↓
+    Salvar e recuperar personagens favoritos
 
-Tela de favoritos
+### 📌 Organização das camadas
 
-📲 QR Code para baixar o APK
+- **main.dart** → ponto de entrada da aplicação  
+- **models/character.dart** → modelo de dados dos personagens  
+- **screens/home_screen.dart** → tela principal com listagem e busca de personagens  
+- **screens/detail_screen.dart** → tela de detalhes do personagem  
+- **screens/favorites_screen.dart** → tela de favoritos  
+- **services/api_service.dart** → responsável pelo consumo da API Rick and Morty  
+- **services/favorites_service.dart** → responsável pela lógica de favoritos  
+- **services/firebase_options.dart** → configuração do Firebase no projeto  
+
+---
+
+## 📸 Prints da aplicação
+
+### Tela inicial
+![Tela inicial](screenshots/home.png)
+
+### Funcionalidade de busca de personagens
+![Busca de personagens](screenshots/search.png)
+
+### Tela de detalhes do personagem
+![Tela de detalhes](screenshots/details.png)
+
+### Tela de favoritos
+![Tela de favoritos](screenshots/favoritos.png)
+
+---
+
+## 📲 QR Code para baixar o APK
 
 Escaneie o QR Code abaixo para baixar o aplicativo diretamente no celular:
 
-📌 Código-fonte
+![QR Code APK](screenshots/qr_download_apk.png)
 
-Todo o código-fonte em Dart está versionado corretamente neste repositório, incluindo:
+---
 
-estrutura principal do app em Flutter;
-telas da aplicação;
-modelo de dados;
-serviços para consumo da API;
-integração com Firebase.
-👨‍💻 Autor
+## 📌 Código-fonte
 
-Desenvolvido por Lana Carol para atividade acadêmica da disciplina, com foco em Flutter, consumo de API e integração com Firebase.
+Todo o código-fonte em **Dart** está versionado corretamente neste repositório, incluindo:
+
+- estrutura principal do app em Flutter;
+- telas da aplicação;
+- modelo de dados;
+- serviços para consumo da API;
+- integração com Firebase.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Miguel Taveira** para atividade acadêmica da disciplina, com foco em Flutter, consumo de API e integração com Firebase.
+
+---
+
+## ✅ Requisitos atendidos
+
+- [x] Aplicação exibindo dados de API
+- [x] Integração com Firebase
+- [x] README com orientações de utilização
+- [x] Código-fonte Dart versionado
+- [x] Desenho da arquitetura da aplicação
+- [x] Prints da aplicação
+- [x] Link para baixar o APK
+- [x] Link para testar a versão web
